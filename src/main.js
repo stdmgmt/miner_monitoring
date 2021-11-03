@@ -10,8 +10,15 @@ import App from './App.vue'
 import './global-components'
 
 // 3rd party plugins
+import '@axios'
+import '@/libs/acl'
+
+// 3rd party plugins
 import '@/libs/portal-vue'
 import '@/libs/toastification'
+
+// Axios Mock Adapter
+import '@/@fake-db/db'
 
 // BSV Plugin Registration
 Vue.use(ToastPlugin)

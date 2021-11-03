@@ -61,15 +61,15 @@
           </b-button>
         </template>
 
-        <b-dropdown-item :to="{ name: 'apps-todo' }">
+        <!-- <b-dropdown-item :to="{ name: 'apps-todo' }">
           <feather-icon
             icon="CheckSquareIcon"
             size="16"
           />
           <span class="align-middle ml-50">Todo</span>
-        </b-dropdown-item>
+        </b-dropdown-item> -->
 
-        <b-dropdown-item :to="{ name: 'apps-chat' }">
+        <!-- <b-dropdown-item :to="{ name: 'apps-chat' }">
           <feather-icon
             icon="MessageSquareIcon"
             size="16"
@@ -91,7 +91,7 @@
             size="16"
           />
           <span class="align-middle ml-50">Calendar</span>
-        </b-dropdown-item>
+        </b-dropdown-item> -->
       </b-dropdown>
     </b-col>
   </b-row>
