@@ -7,7 +7,7 @@ export default [
   {
     title: 'Dashboard',
     route: 'dashboard',
-    icon: 'HomeIcon',
+    icon: 'FileIcon',
   },
   {
     title: 'Second Page',

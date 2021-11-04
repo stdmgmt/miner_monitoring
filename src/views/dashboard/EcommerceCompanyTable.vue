@@ -11,7 +11,7 @@
       class="mb-0"
     >
       <!-- company -->
-      <template #cell(company)="data">
+      <template #cell(miner)="data">
         <div class="d-flex align-items-center">
           <b-avatar
             rounded
@@ -50,22 +50,25 @@
       </template>
 
       <!-- views -->
-      <template #cell(views)="data">
+      <template #cell(active)="data">
         <div class="d-flex flex-column">
           <span class="font-weight-bolder mb-25">{{ data.item.viewTitle }}</span>
-          <span class="font-small-2 text-muted text-nowrap">{{ data.item.viewsub }}</span>
+          <!-- <span class="font-small-2 text-muted text-nowrap">{{ data.item.viewsub }}</span> -->
         </div>
       </template>
 
       <!-- revenue -->
-      <template #cell(revenue)="data">
-        {{ '$'+data.item.revenue }}
+      <template #cell(low_hash)="data">
+        {{ data.item.viewsub }}
+      </template>
+      <template #cell(hash_rate)="data">
+        {{ data.item.revenue }}
       </template>
 
       <!-- sales -->
-      <template #cell(sales)="data">
+      <template #cell(consumption)="data">
         <div class="d-flex align-items-center">
-          <span class="font-weight-bolder mr-1">{{ data.item.sales+'%' }}</span>
+          <span class="font-weight-bolder mr-1">{{ data.item.sales+'k' }}</span>
           <feather-icon
             :icon="data.item.loss ? 'TrendingDownIcon':'TrendingUpIcon'"
             :class="data.item.loss ? 'text-danger':'text-success'"
@@ -98,11 +101,12 @@ export default {
   data() {
     return {
       fields: [
-        { key: 'company', label: 'MINER' },
+        { key: 'miner', label: 'MINER' },
         { key: 'category', label: 'CATEGORY' },
-        { key: 'views', label: 'Active' },
-        { key: 'revenue', label: 'LOW HASH' },
-        { key: 'sales', label: 'HASH RATE' },
+        { key: 'active', label: 'Active' },
+        { key: 'low_hash', label: 'LOW HASH' },
+        { key: 'hash_rate', label: 'HASH RATE' },
+        { key: 'consumption', label: 'CONSUMPTION' },
       ],
     }
   },
