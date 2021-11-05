@@ -10,8 +10,8 @@ export default [
     icon: 'FileIcon',
   },
   {
-    title: 'Second Page',
-    route: 'second-page',
+    title: 'Worker',
+    route: 'worker',
     icon: 'FileIcon',
   },
 ]

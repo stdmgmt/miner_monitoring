@@ -6,16 +6,18 @@
     <b-row>
       <b-col cols="6">
         <b-card-title class="mb-1">
-          1 DAY
+          PER WEEK
         </b-card-title>
         <div class="font-small-2">
-          This Month
+          This Week
         </div>
         <h5 class="mb-1">
-          $4055.56
+          $605.56
         </h5>
         <b-card-text class="text-muted font-small-2">
-          <span class="font-weight-bolder">68.2%</span><span> more earnings than last month.</span>
+          <span class="font-weight-bolder">BTC</span><span> 0.02, 50USD</span><br />
+          <span class="font-weight-bolder">ETH</span><span> 2, 50USD</span><br />
+          <span class="font-weight-bolder">DOGE</span><span> 100, 50USD</span><br />
         </b-card-text>
       </b-col>
       <b-col cols="6">
@@ -69,7 +71,7 @@ export default {
           },
           legend: { show: false },
           comparedResult: [2, -3, 8],
-          labels: ['App', 'Service', 'Product'],
+          labels: ['BTC', 'ETH', 'DOGE'],
           stroke: { width: 0 },
           colors: [$earningsStrokeColor2, $earningsStrokeColor3, $themeColors.success],
           grid: {
@@ -98,9 +100,9 @@ export default {
                   total: {
                     show: true,
                     offsetY: 15,
-                    label: 'App',
+                    label: 'HASH',
                     formatter() {
-                      return '53%'
+                      return '93%'
                     },
                   },
                 },

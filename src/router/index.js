@@ -39,14 +39,14 @@ const router = new VueRouter({
       },
     },
     {
-      path: '/second-page',
-      name: 'second-page',
-      component: () => import('@/views/SecondPage.vue'),
+      path: '/worker',
+      name: 'worker',
+      component: () => import('@/views/worker/Worker.vue'),
       meta: {
-        pageTitle: 'Second Page',
+        pageTitle: 'Worker',
         breadcrumb: [
           {
-            text: 'Second Page',
+            text: 'Wroker',
             active: true,
           },
         ],
