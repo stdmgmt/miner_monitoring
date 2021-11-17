@@ -38,19 +38,39 @@ const router = new VueRouter({
         ],
       },
     },
+    // {
+    //   path: '/worker/list',
+    //   name: 'worker-list',
+    //   component: () => import('@/views/worker/Worker.vue'),
+    //   meta: {
+    //     pageTitle: 'Worker',
+    //     breadcrumb: [
+    //       {
+    //         text: 'Wroker',
+    //         active: true,
+    //       },
+    //     ],
+    //   },
+    // },
     {
-      path: '/worker',
-      name: 'worker',
-      component: () => import('@/views/worker/Worker.vue'),
-      meta: {
-        pageTitle: 'Worker',
-        breadcrumb: [
-          {
-            text: 'Wroker',
-            active: true,
-          },
-        ],
-      },
+      path: '/worker/list',
+      name: 'worker-list',
+      component: () => import('@/views/apps/invoice/invoice-list/InvoiceList.vue'),
+    },
+    {
+      path: '/worker/preview/:id',
+      name: 'worker-preview',
+      component: () => import('@/views/apps/invoice/invoice-preview/InvoicePreview.vue'),
+    },
+    {
+      path: '/worker/add/',
+      name: 'worker-add',
+      component: () => import('@/views/apps/invoice/invoice-add/InvoiceAdd.vue'),
+    },
+    {
+      path: '/worker/edit/:id',
+      name: 'worker-edit',
+      component: () => import('@/views/apps/invoice/invoice-edit/InvoiceEdit.vue'),
     },
     {
       path: '/login',

@@ -6,7 +6,7 @@ const data = {
   invoices: [
     {
       id: 4987,
-      issuedDate: '13 Dec 2019',
+      issuedDate: '504Mh/z',
       client: {
         address: '7777 Mendez Plains',
         company: 'Hall-Robbins PLC',
@@ -19,12 +19,12 @@ const data = {
       total: 3428,
       avatar: '',
       invoiceStatus: 'S19-POOL-1',
-      balance: '$724',
+      balance: '200w',
       dueDate: '23 Apr 2019',
     },
     {
       id: 4988,
-      issuedDate: '17 Jul 2019',
+      issuedDate: '504MH/s',
       client: {
         address: '04033 Wesley Wall Apt. 961',
         company: 'Mccann LLC and Sons',
@@ -36,13 +36,13 @@ const data = {
       service: 'UI/UX Design & Development',
       total: 5219,
       avatar: '',
-      invoiceStatus: 'S9-POOL-1',
-      balance: 0,
+      invoiceStatus: 'S19-POOL-1',
+      balance: '200w',
       dueDate: '15 Dec 2019',
     },
     {
       id: 4989,
-      issuedDate: '19 Oct 2019',
+      issuedDate: '504MH/s',
       client: {
         address: '5345 Robert Squares',
         company: 'Leonard-Garcia and Sons',
@@ -55,12 +55,12 @@ const data = {
       total: 3719,
       avatar: '',
       invoiceStatus: 'S19-POOL-1',
-      balance: 0,
+      balance: '200w',
       dueDate: '03 Nov 2019',
     },
     {
       id: 4990,
-      issuedDate: '06 Mar 2020',
+      issuedDate: '504MH/s',
       client: {
         address: '19022 Clark Parks Suite 149',
         company: 'Smith, Miller and Henry LLC',
@@ -72,13 +72,13 @@ const data = {
       service: 'Software Development',
       total: 4749,
       avatar: '',
-      invoiceStatus: 'Sent',
-      balance: 0,
+      invoiceStatus: 'S19-POOL-2',
+      balance: '200w',
       dueDate: '11 Feb 2020',
     },
     {
       id: 4991,
-      issuedDate: '08 Feb 2020',
+      issuedDate: '504MH/s',
       client: {
         address: '8534 Saunders Hill Apt. 583',
         company: 'Garcia-Cameron and Sons',
@@ -90,13 +90,13 @@ const data = {
       service: 'UI/UX Design & Development',
       total: 4056,
       avatar: '',
-      invoiceStatus: 'Draft',
-      balance: '$815',
+      invoiceStatus: 'S19-POOL-2',
+      balance: '200w',
       dueDate: '30 Jun 2019',
     },
     {
       id: 4992,
-      issuedDate: '26 Aug 2019',
+      issuedDate: '504MH/s',
       client: {
         address: '661 Perez Run Apt. 778',
         company: 'Burnett-Young PLC',
@@ -109,12 +109,12 @@ const data = {
       total: 2771,
       avatar: '',
       invoiceStatus: 'S19-POOL-1',
-      balance: 0,
+      balance: '200w',
       dueDate: '24 Jun 2019',
     },
     {
       id: 4993,
-      issuedDate: '17 Sep 2019',
+      issuedDate: '504MH/s',
       client: {
         address: '074 Long Union',
         company: 'Wilson-Lee LLC',
@@ -126,13 +126,13 @@ const data = {
       service: 'UI/UX Design & Development',
       total: 2713,
       avatar: '',
-      invoiceStatus: 'Draft',
-      balance: '$407',
+      invoiceStatus: 'S9-POOL-1',
+      balance: '200w',
       dueDate: '22 Nov 2019',
     },
     {
       id: 4994,
-      issuedDate: '11 Feb 2020',
+      issuedDate: '504MH/s',
       client: {
         address: '5225 Ford Cape Apt. 840',
         company: 'Schwartz, Henry and Rhodes Group',
@@ -145,12 +145,12 @@ const data = {
       total: 4309,
       avatar: '',
       invoiceStatus: 'S19-POOL-1',
-      balance: '-$205',
+      balance: '200w',
       dueDate: '10 Feb 2020',
     },
     {
       id: 4995,
-      issuedDate: '26 Jan 2020',
+      issuedDate: '504MH/s',
       client: {
         address: '23717 James Club Suite 277',
         company: 'Henderson-Holder PLC',
@@ -163,12 +163,12 @@ const data = {
       total: 3367,
       avatar: '',
       invoiceStatus: 'S9-POOL-1',
-      balance: 0,
+      balance: '200w',
       dueDate: '24 Dec 2019',
     },
     {
       id: 4996,
-      issuedDate: '15 Jan 2020',
+      issuedDate: '504MH/s',
       client: {
         address: '4528 Myers Gateway',
         company: 'Page-Wise PLC',
@@ -181,12 +181,12 @@ const data = {
       total: 4776,
       avatar: '',
       invoiceStatus: 'S9-POOL-1',
-      balance: '$305',
+      balance: '200w',
       dueDate: '02 Jun 2019',
     },
     {
       id: 4997,
-      issuedDate: '27 Sep 2019',
+      issuedDate: '504MH/s',
       client: {
         address: '4234 Mills Club Suite 107',
         company: 'Turner PLC Inc',
@@ -199,12 +199,12 @@ const data = {
       total: 3789,
       avatar: '',
       invoiceStatus: 'L3-POOL-1',
-      balance: '$666',
+      balance: '200w',
       dueDate: '18 Mar 2020',
     },
     {
       id: 4998,
-      issuedDate: '31 Jul 2019',
+      issuedDate: '504MH/s',
       client: {
         address: '476 Keith Meadow',
         company: 'Levine-Dorsey PLC',
@@ -217,12 +217,12 @@ const data = {
       total: 5200,
       avatar: '',
       invoiceStatus: 'L3-POOL-1',
-      balance: 0,
+      balance: '200w',
       dueDate: '17 Jan 2020',
     },
     {
       id: 4999,
-      issuedDate: '14 Feb 2020',
+      issuedDate: '504MH/s',
       client: {
         address: '56381 Ashley Village Apt. 332',
         company: 'Hall, Thompson and Ramirez LLC',
@@ -235,7 +235,7 @@ const data = {
       total: 4558,
       avatar: '',
       invoiceStatus: 'S19-POOL-1',
-      balance: 0,
+      balance: '200w',
       dueDate: '01 Oct 2019',
     },
   ],

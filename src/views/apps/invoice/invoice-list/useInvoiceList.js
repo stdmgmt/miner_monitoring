@@ -16,9 +16,10 @@ export default function useInvoicesList() {
     { key: 'id', label: '#', sortable: true },
     { key: 'invoiceStatus', sortable: true },
     { key: 'client', sortable: true },
-    { key: 'total', sortable: true, formatter: val => `$${val}` },
-    { key: 'issuedDate', sortable: true },
-    { key: 'balance', sortable: true },
+    // { key: 'total', sortable: true, formatter: val => `$${val}` },
+    { key: 'total', label: 'hash/avg', sortable: true },
+    { key: 'issuedDate', label: 'frequency', sortable: true },
+    { key: 'balance', label: 'watt/avg', sortable: true },
     { key: 'actions' },
   ]
   const perPage = ref(10)

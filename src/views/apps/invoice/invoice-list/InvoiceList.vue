@@ -48,7 +48,7 @@
               :dir="$store.state.appConfig.isRTL ? 'rtl' : 'ltr'"
               :options="statusOptions"
               class="invoice-filter-select"
-              placeholder="Select Status"
+              placeholder="Select Pool"
             >
               <template #selected-option="{ label }">
                 <span class="text-truncate overflow-hidden">
@@ -146,15 +146,15 @@
 
       <!-- Column: Balance -->
       <template #cell(balance)="data">
-        <template v-if="data.value === 0">
+        <!-- <template v-if="data.value === 0">
           <b-badge
             pill
             variant="light-success"
           >
             Paid
           </b-badge>
-        </template>
-        <template v-else>
+        </template> -->
+        <template>
           {{ data.value }}
         </template>
       </template>
@@ -204,9 +204,9 @@
             </template>
             <b-dropdown-item>
               <feather-icon icon="DownloadIcon" />
-              <span class="align-middle ml-50">Download</span>
+              <span class="align-middle ml-50">Reboot</span>
             </b-dropdown-item>
-            <b-dropdown-item :to="{ name: 'apps-invoice-edit', params: { id: data.item.id } }">
+            <b-dropdown-item :to="{ name: 'worker-edit', params: { id: data.item.id } }">
               <feather-icon icon="EditIcon" />
               <span class="align-middle ml-50">Edit</span>
             </b-dropdown-item>
@@ -316,11 +316,10 @@ export default {
     })
 
     const statusOptions = [
-      'Downloaded',
-      'Draft',
-      'Paid',
-      'Partial Payment',
-      'Past Due',
+      'S19-POOL-1',
+      'S19-POOL-2',
+      'L3-POOL-1',
+      'S9-POOL-1',
     ]
 
     const {
