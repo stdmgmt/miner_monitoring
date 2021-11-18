@@ -12,7 +12,7 @@
         No invoice found with this invoice id. Check
         <b-link
           class="alert-link"
-          :to="{ name: 'apps-invoice-list'}"
+          :to="{ name: 'worker-list'}"
         >
           Invoice List
         </b-link>
@@ -734,28 +734,28 @@ export default {
 
     const itemsOptions = [
       {
-        itemTitle: 'App Design',
+        itemTitle: 'S19',
         cost: 24,
         qty: 1,
-        description: 'Designed UI kit & app pages.',
+        description: 'IBW',
       },
       {
-        itemTitle: 'App Customization',
+        itemTitle: 'S9',
         cost: 26,
         qty: 1,
-        description: 'Customization & Bug Fixes.',
+        description: 'IBW',
       },
       {
-        itemTitle: 'ABC Template',
+        itemTitle: 'L7',
         cost: 28,
         qty: 1,
-        description: 'Bootstrap 4 admin template.',
+        description: 'IBW',
       },
       {
-        itemTitle: 'App Development',
+        itemTitle: 'L3',
         cost: 32,
         qty: 1,
-        description: 'Native App Development.',
+        description: 'IBW',
       },
     ]
 

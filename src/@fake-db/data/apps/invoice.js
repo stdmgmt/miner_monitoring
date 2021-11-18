@@ -9,7 +9,7 @@ const data = {
       issuedDate: '504Mh/z',
       client: {
         address: '7777 Mendez Plains',
-        company: 'Hall-Robbins PLC',
+        company: 'S19-POOL-1',
         companyEmail: 'don85@johnson.com',
         country: 'USA',
         contact: '(616) 865-4180',
@@ -27,7 +27,7 @@ const data = {
       issuedDate: '504MH/s',
       client: {
         address: '04033 Wesley Wall Apt. 961',
-        company: 'Mccann LLC and Sons',
+        company: 'S19-POOL-2',
         companyEmail: 'brenda49@taylor.info',
         country: 'Haiti',
         contact: '(226) 204-8287',
@@ -45,7 +45,7 @@ const data = {
       issuedDate: '504MH/s',
       client: {
         address: '5345 Robert Squares',
-        company: 'Leonard-Garcia and Sons',
+        company: 'S9-POOL-1',
         companyEmail: 'smithtiffany@powers.com',
         country: 'Denmark',
         contact: '(955) 676-1076',
@@ -63,7 +63,7 @@ const data = {
       issuedDate: '504MH/s',
       client: {
         address: '19022 Clark Parks Suite 149',
-        company: 'Smith, Miller and Henry LLC',
+        company: 'S9-POOL-2',
         companyEmail: 'mejiageorge@lee-perez.com',
         country: 'Cambodia',
         contact: '(832) 323-6914',
@@ -81,7 +81,7 @@ const data = {
       issuedDate: '504MH/s',
       client: {
         address: '8534 Saunders Hill Apt. 583',
-        company: 'Garcia-Cameron and Sons',
+        company: 'L3-POOL-1',
         companyEmail: 'brandon07@pierce.com',
         country: 'Martinique',
         contact: '(970) 982-3353',

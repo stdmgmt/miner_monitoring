@@ -13,7 +13,7 @@
         No invoice found with this invoice id. Check
         <b-link
           class="alert-link"
-          :to="{ name: 'apps-invoice-list'}"
+          :to="{ name: 'worker-list'}"
         >
           Invoice List
         </b-link>
@@ -311,7 +311,7 @@
             variant="outline-secondary"
             class="mb-75"
             block
-            :to="{ name: 'apps-invoice-edit', params: { id: $route.params.id } }"
+            :to="{ name: 'worker-edit', params: { id: $route.params.id } }"
           >
             Edit
           </b-button>

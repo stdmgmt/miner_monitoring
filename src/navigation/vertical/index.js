@@ -11,7 +11,7 @@ export default [
   },
   {
     title: 'Worker',
-    route: 'worker',
+    route: 'worker-list',
     icon: 'FileIcon',
   },
 ]

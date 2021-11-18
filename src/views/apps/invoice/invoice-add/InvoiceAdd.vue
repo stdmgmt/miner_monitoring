@@ -23,7 +23,7 @@
                   <div class="logo-wrapper">
                     <logo />
                     <h3 class="text-primary invoice-logo">
-                      Vuexy
+                      Standard Mining
                     </h3>
                   </div>
                   <b-card-text class="mb-25">
@@ -41,7 +41,7 @@
                 <div class="invoice-number-date mt-md-0 mt-2">
                   <div class="d-flex align-items-center justify-content-md-end mb-1">
                     <h4 class="invoice-title">
-                      Invoice
+                      Wroker
                     </h4>
                     <b-input-group class="input-group-merge invoice-edit-input-group disabled">
                       <b-input-group-prepend is-text>
@@ -56,10 +56,15 @@
                   </div>
                   <div class="d-flex align-items-center mb-1">
                     <span class="title">
-                      Date:
+                      Admin:
                     </span>
-                    <flat-pickr
+                    <!-- <flat-pickr
                       v-model="invoiceData.issuedDate"
+                      class="form-control invoice-edit-input"
+                    /> -->
+                    <b-form-input
+                      v-model="invoiceData.issuedDate"
+                      type="number"
                       class="form-control invoice-edit-input"
                     />
                   </div>
@@ -92,7 +97,7 @@
                   class="mb-lg-1"
                 >
                   <h6 class="mb-2">
-                    Invoice To:
+                    Pool To:
                   </h6>
 
                   <!-- Select Client -->
@@ -113,7 +118,7 @@
                           icon="PlusIcon"
                           size="16"
                         />
-                        <span class="align-middle ml-25">Add New Customer</span>
+                        <span class="align-middle ml-25">Add New Pool</span>
                       </li>
                     </template>
                   </v-select>
@@ -149,7 +154,7 @@
                 >
                   <div>
                     <h6 class="mb-2">
-                      Payment Details:
+                      Pool Details:
                     </h6>
                     <table>
                       <tbody>
@@ -161,9 +166,9 @@
                         </tr>
                         <tr>
                           <td class="pr-1">
-                            Bank name:
+                            Wallet name:
                           </td>
-                          <td>American Bank</td>
+                          <td>sfasdfasdfasdfasdfasdsdf</td>
                         </tr>
                         <tr>
                           <td class="pr-1">
@@ -216,13 +221,13 @@
                           cols="12"
                           lg="5"
                         >
-                          Item
+                          Model
                         </b-col>
                         <b-col
                           cols="12"
                           lg="3"
                         >
-                          Cost
+                          IP (Range)
                         </b-col>
                         <b-col
                           cols="12"
@@ -234,7 +239,7 @@
                           cols="12"
                           lg="2"
                         >
-                          Price
+                          Hash
                         </b-col>
                       </b-row>
                       <div class="form-item-action-col" />
@@ -304,7 +309,7 @@
                         </b-col>
                         <b-col>
                           <p class="mb-0">
-                            Discount: 0% 0% 0%
+                            
                           </p>
                         </b-col>
                       </b-row>
@@ -428,7 +433,7 @@
                   <label
                     for="invoice-data-sales-person"
                     class="text-nowrap mr-50"
-                  >Sales Person:</label>
+                  >Manager:</label>
                   <b-form-input
                     id="invoice-data-sales-person"
                     v-model="invoiceData.salesPerson"
@@ -447,15 +452,15 @@
                   <div class="invoice-total-wrapper">
                     <div class="invoice-total-item">
                       <p class="invoice-total-title">
-                        Subtotal:
+                        Total Hash:
                       </p>
                       <p class="invoice-total-amount">
-                        $1800
+                        1800
                       </p>
                     </div>
                     <div class="invoice-total-item">
                       <p class="invoice-total-title">
-                        Discount:
+                        Watt:
                       </p>
                       <p class="invoice-total-amount">
                         $28
@@ -463,10 +468,10 @@
                     </div>
                     <div class="invoice-total-item">
                       <p class="invoice-total-title">
-                        Tax:
+                        Rate:
                       </p>
                       <p class="invoice-total-amount">
-                        21%
+                        100%
                       </p>
                     </div>
                     <hr class="my-50">
@@ -475,7 +480,7 @@
                         Total:
                       </p>
                       <p class="invoice-total-amount">
-                        $1690
+                        1690
                       </p>
                     </div>
                   </div>
@@ -540,7 +545,7 @@
         <!-- Payment Method -->
         <div class="mt-2">
           <b-form-group
-            label="Accept Payment Via"
+            label="Status"
             label-for="payment-method"
           >
             <v-select
@@ -699,28 +704,28 @@ export default {
 
     const itemsOptions = [
       {
-        itemTitle: 'App Design',
+        itemTitle: 'S19',
         cost: 24,
         qty: 1,
-        description: 'Designed UI kit & app pages.',
+        description: 'IBW',
       },
       {
-        itemTitle: 'App Customization',
+        itemTitle: 'S9',
         cost: 26,
         qty: 1,
-        description: 'Customization & Bug Fixes.',
+        description: 'IBW',
       },
       {
-        itemTitle: 'ABC Template',
+        itemTitle: 'L7',
         cost: 28,
         qty: 1,
-        description: 'Bootstrap 4 admin template.',
+        description: 'IBW',
       },
       {
-        itemTitle: 'App Development',
+        itemTitle: 'L3',
         cost: 32,
         qty: 1,
-        description: 'Native App Development.',
+        description: 'IBW',
       },
     ]
 
@@ -732,9 +737,9 @@ export default {
     }
 
     const paymentMethods = [
-      'Bank Account',
-      'PayPal',
-      'UPI Transfer',
+      'Running',
+      'Hold',
+      'Stop',
     ]
 
     return {

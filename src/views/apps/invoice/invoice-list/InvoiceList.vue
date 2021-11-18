@@ -26,7 +26,7 @@
           />
           <b-button
             variant="primary"
-            :to="{ name: 'apps-invoice-add'}"
+            :to="{ name: 'worker-add'}"
           >
             Add Worker
           </b-button>
@@ -85,7 +85,7 @@
       <!-- Column: Id -->
       <template #cell(id)="data">
         <b-link
-          :to="{ name: 'apps-invoice-preview', params: { id: data.item.id }}"
+          :to="{ name: 'worker-preview', params: { id: data.item.id }}"
           class="font-weight-bold"
         >
           #{{ data.value }}
@@ -180,7 +180,7 @@
             icon="EyeIcon"
             size="16"
             class="mx-1"
-            @click="$router.push({ name: 'apps-invoice-preview', params: { id: data.item.id }})"
+            @click="$router.push({ name: 'worker-preview', params: { id: data.item.id }})"
           />
           <b-tooltip
             title="Preview Invoice"
