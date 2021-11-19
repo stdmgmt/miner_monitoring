@@ -46,7 +46,7 @@
                   <div class="logo-wrapper">
                     <logo />
                     <h3 class="text-primary invoice-logo">
-                      Vuexy
+                      Standard Mining
                     </h3>
                   </div>
                   <b-card-text class="mb-25">
@@ -64,7 +64,7 @@
                 <div class="invoice-number-date mt-md-0 mt-2">
                   <div class="d-flex align-items-center justify-content-md-end mb-1">
                     <h4 class="invoice-title">
-                      Invoice
+                      Worker S19
                     </h4>
                     <b-input-group class="input-group-merge invoice-edit-input-group disabled">
                       <b-input-group-prepend is-text>
@@ -79,7 +79,7 @@
                   </div>
                   <div class="d-flex align-items-center mb-1">
                     <span class="title">
-                      Date:
+                      Admin:
                     </span>
                     <flat-pickr
                       v-model="invoiceData.issuedDate"
@@ -115,7 +115,7 @@
                   class="mb-lg-1"
                 >
                   <h6 class="mb-2">
-                    Invoice To:
+                    Pool To:
                   </h6>
 
                   <!-- Selected Client -->
@@ -126,7 +126,7 @@
                     <h6 class="mb-25">
                       {{ invoiceData.client.name }}
                     </h6>
-                    <b-card-text class="mb-25">
+                    <!-- <b-card-text class="mb-25">
                       {{ invoiceData.client.company }}
                     </b-card-text>
                     <b-card-text class="mb-25">
@@ -137,7 +137,7 @@
                     </b-card-text>
                     <b-card-text class="mb-0">
                       {{ invoiceData.client.companyEmail }}
-                    </b-card-text>
+                    </b-card-text> -->
                   </div>
                 </b-col>
 
@@ -149,25 +149,25 @@
                 >
                   <div>
                     <h6 class="mb-2">
-                      Payment Details:
+                      Pool Details:
                     </h6>
                     <table>
                       <tbody>
                         <tr>
                           <td class="pr-1">
-                            Total Due:
+                            Total:
                           </td>
                           <td><span class="font-weight-bold">$12,110.55</span></td>
                         </tr>
                         <tr>
                           <td class="pr-1">
-                            Bank name:
+                            Wallet address:
                           </td>
-                          <td>American Bank</td>
+                          <td>sfasdfasdfdfasdfasdsdf</td>
                         </tr>
                         <tr>
                           <td class="pr-1">
-                            Country:
+                            Pool Service:
                           </td>
                           <td>United States</td>
                         </tr>
@@ -216,25 +216,25 @@
                           cols="12"
                           lg="5"
                         >
-                          Item
+                          Model
                         </b-col>
                         <b-col
                           cols="12"
                           lg="3"
                         >
-                          Cost
+                          Rack
                         </b-col>
                         <b-col
                           cols="12"
                           lg="2"
                         >
-                          Qty
+                          IP (Range)
                         </b-col>
                         <b-col
                           cols="12"
                           lg="2"
                         >
-                          Price
+                          Hash
                         </b-col>
                       </b-row>
                       <div class="form-item-action-col" />
@@ -428,7 +428,7 @@
                   <label
                     for="invoice-data-sales-person"
                     class="text-nowrap mr-50"
-                  >Sales Person:</label>
+                  >Manager:</label>
                   <b-form-input
                     id="invoice-data-sales-person"
                     v-model="invoiceData.salesPerson"
@@ -447,26 +447,26 @@
                   <div class="invoice-total-wrapper">
                     <div class="invoice-total-item">
                       <p class="invoice-total-title">
-                        Subtotal:
+                        Total Hash:
                       </p>
                       <p class="invoice-total-amount">
-                        $1800
+                        180
                       </p>
                     </div>
                     <div class="invoice-total-item">
                       <p class="invoice-total-title">
-                        Discount:
+                        Watt:
                       </p>
                       <p class="invoice-total-amount">
-                        $28
+                        280
                       </p>
                     </div>
                     <div class="invoice-total-item">
                       <p class="invoice-total-title">
-                        Tax:
+                        Rate:
                       </p>
                       <p class="invoice-total-amount">
-                        21%
+                        100%
                       </p>
                     </div>
                     <hr class="my-50">
@@ -475,7 +475,7 @@
                         Total:
                       </p>
                       <p class="invoice-total-amount">
-                        $1690
+                        1690
                       </p>
                     </div>
                   </div>
@@ -514,7 +514,7 @@
             class="mb-75"
             block
           >
-            Send Invoice
+            Save
           </b-button>
 
           <!-- Button: DOwnload -->
@@ -533,11 +533,11 @@
             variant="outline-primary"
             block
           >
-            Save
+            Edit
           </b-button>
 
           <!-- Button: Add Payment -->
-          <b-button
+          <!-- <b-button
             v-b-toggle.sidebar-invoice-add-payment
             v-ripple.400="'rgba(255, 255, 255, 0.15)'"
             variant="success"
@@ -545,13 +545,13 @@
             block
           >
             Add Payment
-          </b-button>
+          </b-button> -->
         </b-card>
 
         <!-- Payment Method -->
         <div class="mt-2">
           <b-form-group
-            label="Accept Payment Via"
+            label="Status"
             label-for="payment-method"
           >
             <v-select
@@ -568,7 +568,7 @@
 
           <!-- Payment Terms -->
           <div class="d-flex justify-content-between align-items-center">
-            <label for="patymentTerms">Payment Terms</label>
+            <label for="patymentTerms">Error Alarm</label>
             <b-form-checkbox
               id="patymentTerms"
               :checked="true"
@@ -578,7 +578,7 @@
 
           <!-- Client Notes -->
           <div class="d-flex justify-content-between align-items-center my-1">
-            <label for="clientNotes">Client Notes</label>
+            <label for="clientNotes">Hash Alarm</label>
             <b-form-checkbox
               id="clientNotes"
               :checked="true"
@@ -588,7 +588,7 @@
 
           <!-- Payment Stub -->
           <div class="d-flex justify-content-between align-items-center">
-            <label for="paymentStub">Payment Stub</label>
+            <label for="paymentStub">Frequency Alram</label>
             <b-form-checkbox
               id="paymentStub"
               switch
@@ -711,13 +711,13 @@ export default {
         // * Your response will contain this extra data
         // ? [Purpose is to make it more API friendly and less static as possible]
         invoiceData.value.items = [{
-          itemTitle: 'App Design',
+          itemTitle: 'S19',
           cost: 24,
           qty: 2,
-          description: 'Designed UI kit & app pages.',
+          description: 'memo',
         }]
         invoiceData.value.note = 'It was a pleasure working with you and your team. We hope you will keep us in mind for future freelance projects. Thank You!'
-        invoiceData.value.paymentMethod = 'Bank Account'
+        invoiceData.value.paymentMethod = 'Run'
       })
       .catch(error => {
         if (error.response.status === 404) {
@@ -767,9 +767,9 @@ export default {
     }
 
     const paymentMethods = [
-      'Bank Account',
-      'PayPal',
-      'UPI Transfer',
+      'Run',
+      'Hold',
+      'Stop',
     ]
 
     return {

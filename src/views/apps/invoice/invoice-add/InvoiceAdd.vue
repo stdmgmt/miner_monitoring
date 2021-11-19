@@ -131,7 +131,7 @@
                     <h6 class="mb-25">
                       {{ invoiceData.client.name }}
                     </h6>
-                    <b-card-text class="mb-25">
+                    <!-- <b-card-text class="mb-25">
                       {{ invoiceData.client.company }}
                     </b-card-text>
                     <b-card-text class="mb-25">
@@ -142,7 +142,7 @@
                     </b-card-text>
                     <b-card-text class="mb-0">
                       {{ invoiceData.client.companyEmail }}
-                    </b-card-text>
+                    </b-card-text> -->
                   </div>
                 </b-col>
 
@@ -160,19 +160,19 @@
                       <tbody>
                         <tr>
                           <td class="pr-1">
-                            Total Due:
+                            Total:
                           </td>
                           <td><span class="font-weight-bold">$12,110.55</span></td>
                         </tr>
                         <tr>
                           <td class="pr-1">
-                            Wallet name:
+                            Wallet Address:
                           </td>
-                          <td>sfasdfasdfasdfasdfasdsdf</td>
+                          <td>sfasdfasdfdfasdfasdsdf</td>
                         </tr>
                         <tr>
                           <td class="pr-1">
-                            Country:
+                            Pool Service:
                           </td>
                           <td>United States</td>
                         </tr>
@@ -227,13 +227,13 @@
                           cols="12"
                           lg="3"
                         >
-                          IP (Range)
+                          Rack
                         </b-col>
                         <b-col
                           cols="12"
                           lg="2"
                         >
-                          Qty
+                          IP (Range)
                         </b-col>
                         <b-col
                           cols="12"
@@ -455,7 +455,7 @@
                         Total Hash:
                       </p>
                       <p class="invoice-total-amount">
-                        1800
+                        180
                       </p>
                     </div>
                     <div class="invoice-total-item">
@@ -463,7 +463,7 @@
                         Watt:
                       </p>
                       <p class="invoice-total-amount">
-                        $28
+                        1000
                       </p>
                     </div>
                     <div class="invoice-total-item">
@@ -519,7 +519,7 @@
             block
             disabled
           >
-            Send Invoice
+            Save
           </b-button>
 
           <!-- Button: DOwnload -->
@@ -538,7 +538,7 @@
             variant="outline-primary"
             block
           >
-            Save
+            Cancel
           </b-button>
         </b-card>
 
@@ -562,7 +562,7 @@
 
           <!-- Payment Terms -->
           <div class="d-flex justify-content-between align-items-center">
-            <label for="patymentTerms">Payment Terms</label>
+            <label for="patymentTerms">Error Alram</label>
             <b-form-checkbox
               id="patymentTerms"
               :checked="true"
@@ -572,7 +572,7 @@
 
           <!-- Client Notes -->
           <div class="d-flex justify-content-between align-items-center my-1">
-            <label for="clientNotes">Client Notes</label>
+            <label for="clientNotes">Hash Alram</label>
             <b-form-checkbox
               id="clientNotes"
               :checked="true"
@@ -582,7 +582,7 @@
 
           <!-- Payment Stub -->
           <div class="d-flex justify-content-between align-items-center">
-            <label for="paymentStub">Payment Stub</label>
+            <label for="paymentStub">Frequency Alram</label>
             <b-form-checkbox
               id="paymentStub"
               switch

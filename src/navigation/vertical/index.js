@@ -1,17 +1,22 @@
 export default [
   {
-    title: 'Home',
-    route: 'home',
-    icon: 'HomeIcon',
-  },
-  {
     title: 'Dashboard',
     route: 'dashboard',
-    icon: 'FileIcon',
+    icon: 'HomeIcon',
   },
   {
     title: 'Worker',
     route: 'worker-list',
+    icon: 'FileIcon',
+  },
+  {
+    title: 'Rack',
+    route: 'rack',
+    icon: 'FileIcon',
+  },
+  {
+    title: 'Home',
+    route: 'home',
     icon: 'FileIcon',
   },
 ]

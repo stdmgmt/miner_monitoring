@@ -11,20 +11,6 @@ const router = new VueRouter({
   },
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: () => import('@/views/Home.vue'),
-      meta: {
-        pageTitle: 'Home',
-        breadcrumb: [
-          {
-            text: 'Home',
-            active: true,
-          },
-        ],
-      },
-    },
-    {
       path: '/dashboard',
       name: 'dashboard',
       component: () => import('@/views/dashboard/Dashboard.vue'),
@@ -38,20 +24,6 @@ const router = new VueRouter({
         ],
       },
     },
-    // {
-    //   path: '/worker/list',
-    //   name: 'worker-list',
-    //   component: () => import('@/views/worker/Worker.vue'),
-    //   meta: {
-    //     pageTitle: 'Worker',
-    //     breadcrumb: [
-    //       {
-    //         text: 'Wroker',
-    //         active: true,
-    //       },
-    //     ],
-    //   },
-    // },
     {
       path: '/worker/list',
       name: 'worker-list',
@@ -71,6 +43,20 @@ const router = new VueRouter({
       path: '/worker/edit/:id',
       name: 'worker-edit',
       component: () => import('@/views/apps/invoice/invoice-edit/InvoiceEdit.vue'),
+    },
+    {
+      path: '/',
+      name: 'rack',
+      component: () => import('@/views/Rack.vue'),
+      meta: {
+        pageTitle: 'Rack',
+        breadcrumb: [
+          {
+            text: 'Rack',
+            active: true,
+          },
+        ],
+      },
     },
     {
       path: '/login',

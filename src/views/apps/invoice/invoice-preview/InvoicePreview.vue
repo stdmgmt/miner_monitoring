@@ -46,7 +46,7 @@
                 <div class="logo-wrapper">
                   <logo />
                   <h3 class="text-primary invoice-logo">
-                    Vuexy
+                    Standard Mining
                   </h3>
                 </div>
                 <p class="card-text mb-25">
@@ -63,12 +63,12 @@
               <!-- Header: Right Content -->
               <div class="mt-md-0 mt-2">
                 <h4 class="invoice-title">
-                  Invoice
+                  S19
                   <span class="invoice-number">#{{ invoiceData.id }}</span>
                 </h4>
                 <div class="invoice-date-wrapper">
                   <p class="invoice-date-title">
-                    Date Issued:
+                    Admin:
                   </p>
                   <p class="invoice-date">
                     {{ invoiceData.issuedDate }}
@@ -103,12 +103,12 @@
                 class="p-0"
               >
                 <h6 class="mb-2">
-                  Invoice To:
+                  Pool To:
                 </h6>
                 <h6 class="mb-25">
                   {{ invoiceData.client.name }}
                 </h6>
-                <p class="card-text mb-25">
+                <!-- <p class="card-text mb-25">
                   {{ invoiceData.client.company }}
                 </p>
                 <p class="card-text mb-25">
@@ -119,7 +119,7 @@
                 </p>
                 <p class="card-text mb-0">
                   {{ invoiceData.client.companyEmail }}
-                </p>
+                </p> -->
               </b-col>
 
               <!-- Col: Payment Details -->
@@ -130,7 +130,7 @@
               >
                 <div>
                   <h6 class="mb-2">
-                    Payment Details:
+                    Pool Details:
                   </h6>
                   <table>
                     <tbody>
@@ -142,7 +142,7 @@
                       </tr>
                       <tr>
                         <td class="pr-1">
-                          Bank name:
+                          Wallet name:
                         </td>
                         <td>{{ paymentDetails.bankName }}</td>
                       </tr>
@@ -175,7 +175,7 @@
           <b-table-lite
             responsive
             :items="invoiceDescription"
-            :fields="['taskDescription', 'rate', 'hours', 'total']"
+            :fields="['rack', 'hash', 'frequency', 'watt']"
           >
             <template #cell(taskDescription)="data">
               <b-card-text class="font-weight-bold mb-25">
@@ -200,8 +200,8 @@
                 order-md="1"
               >
                 <b-card-text class="mb-0">
-                  <span class="font-weight-bold">Salesperson:</span>
-                  <span class="ml-75">Alfie Solomons</span>
+                  <span class="font-weight-bold">Manager:</span>
+                  <span class="ml-75">jaes</span>
                 </b-card-text>
               </b-col>
 
@@ -216,26 +216,26 @@
                 <div class="invoice-total-wrapper">
                   <div class="invoice-total-item">
                     <p class="invoice-total-title">
-                      Subtotal:
+                      Total Hash:
                     </p>
                     <p class="invoice-total-amount">
-                      $1800
+                      180
                     </p>
                   </div>
                   <div class="invoice-total-item">
                     <p class="invoice-total-title">
-                      Discount:
+                      Watt:
                     </p>
                     <p class="invoice-total-amount">
-                      $28
+                      1000
                     </p>
                   </div>
                   <div class="invoice-total-item">
                     <p class="invoice-total-title">
-                      Tax:
+                      Rate:
                     </p>
                     <p class="invoice-total-amount">
-                      21%
+                      100%
                     </p>
                   </div>
                   <hr class="my-50">
@@ -244,7 +244,7 @@
                       Total:
                     </p>
                     <p class="invoice-total-amount">
-                      $1690
+                      1690
                     </p>
                   </div>
                 </div>
@@ -281,17 +281,7 @@
             class="mb-75"
             block
           >
-            Send Invoice
-          </b-button>
-
-          <!-- Button: DOwnload -->
-          <b-button
-            v-ripple.400="'rgba(186, 191, 199, 0.15)'"
-            variant="outline-secondary"
-            class="mb-75"
-            block
-          >
-            Download
+            Save
           </b-button>
 
           <!-- Button: Print -->
@@ -318,13 +308,12 @@
 
           <!-- Button: Add Payment -->
           <b-button
-            v-b-toggle.sidebar-invoice-add-payment
             v-ripple.400="'rgba(255, 255, 255, 0.15)'"
             variant="success"
             class="mb-75"
             block
           >
-            Add Payment
+            Delete
           </b-button>
         </b-card>
       </b-col>
@@ -376,19 +365,12 @@ export default {
     // ? Your real data will contain this information
     const invoiceDescription = [
       {
-        taskTitle: 'Native App Development',
-        taskDescription: 'Developed a full stack native app using React Native, Bootstrap & Python',
-        rate: '$60.00',
-        hours: '30',
-        total: '$1,800.00',
-      },
-      {
-        taskTitle: 'UI Kit Design',
-        taskDescription: 'Designed a UI kit for native app using Sketch, Figma & Adobe XD',
-        rate: '$60.00',
-        hours: '20',
-        total: '$1200.00',
-      },
+        // info: 'S19',
+        rack: 'A1-01',
+        hash: '60MH/s',
+        frequency: '120',
+        watt: '120Watt',
+      }
     ]
 
     const INVOICE_APP_STORE_MODULE_NAME = 'app-invoice'
