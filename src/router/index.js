@@ -45,9 +45,9 @@ const router = new VueRouter({
       component: () => import('@/views/apps/invoice/invoice-edit/InvoiceEdit.vue'),
     },
     {
-      path: '/',
+      path: '/rack/list',
       name: 'rack',
-      component: () => import('@/views/Rack.vue'),
+      component: () => import('@/views/rack/Rack.vue'),
       meta: {
         pageTitle: 'Rack',
         breadcrumb: [
