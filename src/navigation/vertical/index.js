@@ -10,7 +10,7 @@ export default [
     icon: 'FileIcon',
   },
   {
-    title: 'Rack',
+    title: 'Model / Rack',
     route: 'rack',
     icon: 'FileIcon',
   },

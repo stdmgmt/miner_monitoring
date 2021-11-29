@@ -11,6 +11,10 @@ const router = new VueRouter({
   },
   routes: [
     {
+      path: '/',
+      redirect: { name: 'dashboard' }
+    },
+    {
       path: '/dashboard',
       name: 'dashboard',
       component: () => import('@/views/dashboard/Dashboard.vue'),
