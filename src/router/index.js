@@ -12,7 +12,7 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      redirect: { name: 'dashboard' }
+      redirect: { name: 'dashboard' },
     },
     {
       path: '/dashboard',
@@ -49,14 +49,14 @@ const router = new VueRouter({
       component: () => import('@/views/apps/invoice/invoice-edit/InvoiceEdit.vue'),
     },
     {
-      path: '/rack/list',
-      name: 'rack',
-      component: () => import('@/views/rack/Rack.vue'),
+      path: '/rule',
+      name: 'rule',
+      component: () => import('@/views/rule/Rule.vue'),
       meta: {
-        pageTitle: 'Rack',
+        pageTitle: 'Rule',
         breadcrumb: [
           {
-            text: 'Rack',
+            text: 'Rule',
             active: true,
           },
         ],

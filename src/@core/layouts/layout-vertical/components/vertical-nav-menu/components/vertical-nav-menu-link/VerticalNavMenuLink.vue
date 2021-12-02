@@ -1,6 +1,5 @@
 <template>
   <li
-    v-if="canViewVerticalNavMenuLink(item)"
     class="nav-item"
     :class="{
       'active': isActive,
@@ -60,6 +59,8 @@ export default {
       // i18n
       t,
     }
+  },
+  mounted() {
   },
 
 }

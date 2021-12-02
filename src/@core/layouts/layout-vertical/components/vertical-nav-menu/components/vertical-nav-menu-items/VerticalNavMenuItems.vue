@@ -3,7 +3,7 @@
     <component
       :is="resolveNavItemComponent(item)"
       v-for="item in items"
-      :key="item.header || item.title"
+      :key="item.title"
       :item="item"
     />
   </ul>
@@ -34,6 +34,8 @@ export default {
     return {
       resolveNavItemComponent,
     }
+  },
+  mounted() {
   },
 }
 </script>

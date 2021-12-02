@@ -22,6 +22,7 @@
     </div>
 
     <b-navbar-nav class="nav align-items-center ml-auto">
+      <notification-dropdown />
       <b-nav-item-dropdown
         right
         toggle-class="d-flex align-items-center dropdown-user-link"
@@ -30,7 +31,7 @@
         <template #button-content>
           <div class="d-sm-flex d-none user-nav">
             <p class="user-name font-weight-bolder mb-0">
-              John Doe
+              John Doee
             </p>
             <span class="user-status">Admin</span>
           </div>
@@ -100,6 +101,7 @@ import {
   BLink, BNavbarNav, BNavItemDropdown, BDropdownItem, BDropdownDivider, BAvatar,
 } from 'bootstrap-vue'
 import DarkToggler from '@core/layouts/components/app-navbar/components/DarkToggler.vue'
+import NotificationDropdown from './NotificationDropdown.vue'
 
 export default {
   components: {
@@ -109,7 +111,7 @@ export default {
     BDropdownItem,
     BDropdownDivider,
     BAvatar,
-
+    NotificationDropdown,
     // Navbar Components
     DarkToggler,
   },
