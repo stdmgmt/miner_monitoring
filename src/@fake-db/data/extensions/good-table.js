@@ -97,6 +97,36 @@ const data = {
     },
   ],
 
+  tableBasic3: [
+    {
+      id: 1,
+      avatar: require('@/assets/images/avatars/10-small.png'),
+      fullName: "btc.com",
+      email: 'stratum+tcp://us.ss.btc.com:1800',
+      startDate: 'stratum+tcp://eu.ss.btc.com:1800',
+      salary: 'stratum+tcp://sg.ss.btc.com:1800',
+      status: 'Alarm',
+    },
+    {
+      id: 2,
+      avatar: require('@/assets/images/avatars/1-small.png'),
+      fullName: 'ethermine.org',
+      email: 'asia1.ethermine.org',
+      startDate: 'asia2.ethermine.org',
+      salary: 'eu1.ethermine.org',
+      status: 'Reboot',
+    },
+    {
+      id: 3,
+      avatar: require('@/assets/images/avatars/9-small.png'),
+      fullName: 'poolin.me',
+      email: 'stratum+tcp://btc.ss.poolin.me:443',
+      startDate: 'stratum+tcp://btc.ss.poolin.me:1883',
+      salary: 'stratum+tcp://btc.ss.poolin.me:700',
+      status: 'Showdown',
+    },
+  ],
+
   tableRowGrp: [
     {
       mode: 'span',
@@ -377,6 +407,7 @@ const data = {
 
 mock.onGet('/good-table/basic').reply(() => [200, data.tableBasic])
 mock.onGet('/good-table/basic2').reply(() => [200, data.tableBasic2])
+mock.onGet('/good-table/basic3').reply(() => [200, data.tableBasic3])
 mock.onGet('/good-table/row-group').reply(() => [200, data.tableRowGrp])
 mock.onGet('/good-table/advanced-search').reply(() => [200, data.tableAdvancedSearch])
 mock.onGet('/good-table/table_ssr').reply(() => [200, data.tableSsr])

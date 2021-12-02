@@ -66,6 +66,8 @@ export default {
       { title: 'Input Mask', route: { name: 'forms-element-input-mask' }, icon: 'TypeIcon', isBookmarked: false },
       { title: 'Input', route: { name: 'forms-element-input' }, icon: 'TypeIcon', isBookmarked: false },
       { title: 'Dashboard', route: { name: 'dashboard' }, icon: 'FileTextIcon', isBookmarked: false },
+      { title: 'Worker', route: { name: 'work' }, icon: 'FileTextIcon', isBookmarked: false },
+      { title: 'Rack', route: { name: 'rack' }, icon: 'FileTextIcon', isBookmarked: false },
       { title: 'Invoice Add', route: { name: 'worker-add' }, icon: 'FileTextIcon', isBookmarked: false },
       { title: 'Invoice Edit', route: { name: 'worker-edit', params: { id: 4987 } }, icon: 'FileTextIcon', isBookmarked: false },
       { title: 'Invoice List', route: { name: 'worker-list' }, icon: 'FileTextIcon', isBookmarked: false },

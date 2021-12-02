@@ -32,6 +32,15 @@ const router = new VueRouter({
       path: '/worker/list',
       name: 'worker-list',
       component: () => import('@/views/apps/invoice/invoice-list/InvoiceList.vue'),
+      meta: {
+        pageTitle: 'Worker',
+        breadcrumb: [
+          {
+            text: 'Worker',
+            active: true,
+          },
+        ],
+      },
     },
     {
       path: '/worker/preview/:id',
@@ -47,6 +56,20 @@ const router = new VueRouter({
       path: '/worker/edit/:id',
       name: 'worker-edit',
       component: () => import('@/views/apps/invoice/invoice-edit/InvoiceEdit.vue'),
+    },
+    {
+      path: '/rack/list',
+      name: 'rack-list',
+      component: () => import('@/views/rack/Rack.vue'),
+      meta: {
+        pageTitle: 'Rack',
+        breadcrumb: [
+          {
+            text: 'Rack',
+            active: true,
+          },
+        ],
+      },
     },
     {
       path: '/rule',

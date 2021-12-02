@@ -7,16 +7,16 @@ export default [
   {
     title: 'Worker',
     route: 'worker-list',
-    icon: 'FileIcon',
+    icon: 'CpuIcon',
   },
   {
-    title: 'Model / Rule',
+    title: 'Rack',
+    route: 'rack-list',
+    icon: 'ServerIcon',
+  },
+  {
+    title: 'Model / Rule / Pool',
     route: 'rule',
-    icon: 'FileIcon',
-  },
-  {
-    title: 'Home',
-    route: 'home',
     icon: 'FileIcon',
   },
 ]

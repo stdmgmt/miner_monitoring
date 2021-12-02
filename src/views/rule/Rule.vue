@@ -3,7 +3,7 @@
     <b-col cols="12">
       <b-card-code title="Model">
 
-        <!-- search input -->
+        <!-- add modal -->
         <div class="custom-search d-flex justify-content-end" style="margin-bottom: 15px !important;">
           <b-button
             v-ripple.400="'rgba(255, 255, 255, 0.15)'"
@@ -302,6 +302,157 @@
 
       </b-card-code>
     </b-col>
+    <b-col cols="12">
+      <b-card-code title="Pool">
+
+        <!-- search input -->
+        <div class="custom-search d-flex justify-content-end" style="margin-bottom: 15px !important;">
+          <b-button
+            v-ripple.400="'rgba(255, 255, 255, 0.15)'"
+            variant="primary"
+            style="margin-botton: 15px;"
+            v-b-modal.modal-login2
+          >
+            Add Pool
+          </b-button>
+        </div>
+
+        <!-- table -->
+        <vue-good-table
+          :columns="columns3"
+          :rows="rows3"
+          :rtl="direction"
+          :search-options="{
+            enabled: true,
+            externalQuery: searchTerm }"
+          :select-options="{
+            enabled: true,
+            selectOnCheckboxOnly: true, // only select when checkbox is clicked instead of the row
+            selectionInfoClass: 'custom-class',
+            selectionText: 'rows selected',
+            clearSelectionText: 'clear',
+            disableSelectInfo: true, // disable the select info panel on top
+            selectAllByGroup: true, // when used in combination with a grouped table, add a checkbox in the header row to check/uncheck the entire group
+          }"
+          :pagination-options="{
+            enabled: true,
+            perPage:pageLength
+          }"
+        >
+          <template
+            slot="table-row"
+            slot-scope="props"
+          >
+
+            <!-- Column: Name -->
+            <span
+              v-if="props.column.field === 'fullName'"
+              class="text-nowrap"
+            >
+              <!-- <b-avatar
+                :src="props.row.avatar"
+                class="mx-1"
+              /> -->
+              <span class="text-nowrap">{{ props.row.fullName }}</span>
+            </span>
+
+            <!-- Column: Status -->
+            <span v-else-if="props.column.field === 'status'">
+              <b-badge :variant="statusVariant(props.row.status)">
+                {{ props.row.status }}
+              </b-badge>
+            </span>
+
+            <!-- Column: Action -->
+            <span v-else-if="props.column.field === 'action'">
+              <span>
+                <b-dropdown
+                  variant="link"
+                  toggle-class="text-decoration-none"
+                  no-caret
+                >
+                  <template v-slot:button-content>
+                    <feather-icon
+                      icon="MoreVerticalIcon"
+                      size="16"
+                      class="text-body align-middle mr-25"
+                    />
+                  </template>
+                  <b-dropdown-item>
+                    <feather-icon
+                      icon="Edit2Icon"
+                      class="mr-50"
+                    />
+                    <span v-b-modal.modal-login2>Edit</span>
+                  </b-dropdown-item>
+                  <b-dropdown-item>
+                    <feather-icon
+                      icon="TrashIcon"
+                      class="mr-50"
+                    />
+                    <span>Delete</span>
+                  </b-dropdown-item>
+                </b-dropdown>
+              </span>
+            </span>
+
+            <!-- Column: Common -->
+            <span v-else>
+              {{ props.formattedRow[props.column.field] }}
+            </span>
+          </template>
+
+          <!-- pagination -->
+          <template
+            slot="pagination-bottom"
+            slot-scope="props"
+          >
+            <div class="d-flex justify-content-between flex-wrap">
+              <div class="d-flex align-items-center mb-0 mt-1">
+                <span class="text-nowrap ">
+                  Showing 1 to
+                </span>
+                <b-form-select
+                  v-model="pageLength"
+                  :options="['3','5','10']"
+                  class="mx-1"
+                  @input="(value)=>props.perPageChanged({currentPerPage:value})"
+                />
+                <span class="text-nowrap"> of {{ props.total }} entries </span>
+              </div>
+              <div>
+                <b-pagination
+                  :value="1"
+                  :total-rows="props.total"
+                  :per-page="pageLength"
+                  first-number
+                  last-number
+                  align="right"
+                  prev-class="prev-item"
+                  next-class="next-item"
+                  class="mt-1 mb-0"
+                  @input="(value)=>props.pageChanged({currentPage:value})"
+                >
+                  <template #prev-text>
+                    <feather-icon
+                      icon="ChevronLeftIcon"
+                      size="18"
+                    />
+                  </template>
+                  <template #next-text>
+                    <feather-icon
+                      icon="ChevronRightIcon"
+                      size="18"
+                    />
+                  </template>
+                </b-pagination>
+              </div>
+            </div>
+          </template>
+        </vue-good-table>
+
+      </b-card-code>
+    </b-col>
     <!-- modal login-->
     <b-modal
       id="modal-login"
@@ -346,6 +497,48 @@
           <b-form-input
             type="text"
             placeholder="A or B or C"
+          />
+        </b-form-group>
+      </b-form>
+    </b-modal>
+
+    <!-- modal login2-->
+    <b-modal
+      id="modal-login2"
+      cancel-variant="outline-secondary"
+      ok-title="Add"
+      cancel-title="Cancel"
+      centered
+      title="Add Pool"
+    >
+      <b-form>
+        <b-form-group>
+          <label for="email">Name:</label>
+          <b-form-input
+            id="name"
+            type="text"
+            placeholder="Pool Server Name"
+          />
+        </b-form-group>
+        <b-form-group>
+          <label for="password">First Pool</label>
+          <b-form-input
+            type="text"
+            placeholder="stratum+tcp://"
+          />
+        </b-form-group>
+        <b-form-group>
+          <label for="password">Second Pool</label>
+          <b-form-input
+            type="text"
+            placeholder="stratum+tcp://"
+          />
+        </b-form-group>
+        <b-form-group>
+          <label for="password">Third Pool</label>
+          <b-form-input
+            type="text"
+            placeholder="stratum+tcp://"
           />
         </b-form-group>
       </b-form>
@@ -506,8 +699,31 @@ export default {
           field: 'action',
         },
       ],
+      columns3: [
+        {
+          label: 'Name',
+          field: 'fullName',
+        },
+        {
+          label: 'First Pool',
+          field: 'email',
+        },
+        {
+          label: 'Second Pool',
+          field: 'startDate',
+        },
+        {
+          label: 'Third Pool',
+          field: 'salary',
+        },
+        {
+          label: 'Action',
+          field: 'action',
+        },
+      ],
       rows: [],
       rows2: [],
+      rows3: [],
       searchTerm: '',
       status: [{
         1: 'Current',
@@ -557,6 +773,8 @@ export default {
       .then(res => { this.rows = res.data })
     this.$http.get('/good-table/basic2')
       .then(res => { this.rows2 = res.data })
+    this.$http.get('/good-table/basic3')
+      .then(res => { this.rows3 = res.data })
   },
 }
 </script>
