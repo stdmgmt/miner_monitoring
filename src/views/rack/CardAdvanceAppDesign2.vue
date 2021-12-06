@@ -1,241 +1,189 @@
 <template>
   <b-card class="card-app-design">
     <b-badge variant="light-primary">
-      <h3 class="text-primary">A1</h3>
+      <h3 class="text-primary">A2</h3>
     </b-badge>
     <div class="design-group d-flex"></div>
     <!--/ design group -->
     <div class="d-flex">
-      <div
-        @click.prevent="selectRack(1)"
-        style="cursor: pointer;"
-        class="dropbown text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow"
-      >
-        <span>A1-002</span>
+      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-049</span>
       </div>
-      <div v-if="selected ===1" class="mt-1">
-        <b-list-group>
-          <b-list-group-item>Mount/Unmount</b-list-group-item>
-          <b-list-group-item>Restart</b-list-group-item>
-          <b-list-group-item>Reboot</b-list-group-item>
-          <b-list-group-item>Shut down</b-list-group-item>
-          <b-list-group-item>Config</b-list-group-item>
-        </b-list-group>
+      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-050</span>
       </div>
-      <div
-        @click.prevent="selectRack(2)"
-        style="cursor: pointer;"
-        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-002</span>
+      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-051</span>
       </div>
-      <div v-if="selected ===2" class="mt-1">
-        <b-list-group>
-          <b-list-group-item>Mount/Unmount</b-list-group-item>
-          <b-list-group-item>Restart</b-list-group-item>
-          <b-list-group-item>Reboot</b-list-group-item>
-          <b-list-group-item>Shut down</b-list-group-item>
-          <b-list-group-item>Config</b-list-group-item>
-        </b-list-group>
+      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-052</span>
       </div>
-      <div
-        @click.prevent="selectRack(3)"
-        style="cursor: pointer;"
-        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-003</span>
+      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-053</span>
       </div>
-      <div v-if="selected ===3" class="mt-1">
-        <b-list-group>
-          <b-list-group-item>Mount/Unmount</b-list-group-item>
-          <b-list-group-item>Restart</b-list-group-item>
-          <b-list-group-item>Reboot</b-list-group-item>
-          <b-list-group-item>Shut down</b-list-group-item>
-          <b-list-group-item>Config</b-list-group-item>
-        </b-list-group>
-      </div>
-      <div
-        @click.prevent="selectRack(4)"
-        style="cursor: pointer;"
-        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-004</span>
-      </div>
-      <div v-if="selected ===4" class="mt-1">
-        <b-list-group>
-          <b-list-group-item>Mount/Unmount</b-list-group-item>
-          <b-list-group-item>Restart</b-list-group-item>
-          <b-list-group-item>Reboot</b-list-group-item>
-          <b-list-group-item>Shut down</b-list-group-item>
-          <b-list-group-item>Config</b-list-group-item>
-        </b-list-group>
-      </div>
-      <div
-        @click.prevent="selectRack(5)"
-        style="cursor: pointer;"
-        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-005</span>
-      </div>
-      <div v-if="selected ===5" class="mt-1">
-        <b-list-group>
-          <b-list-group-item>Mount/Unmount</b-list-group-item>
-          <b-list-group-item>Restart</b-list-group-item>
-          <b-list-group-item>Reboot</b-list-group-item>
-          <b-list-group-item>Shut down</b-list-group-item>
-          <b-list-group-item>Config</b-list-group-item>
-        </b-list-group>
-      </div>
-      <div
-        @click.prevent="selectRack(6)"
-        style="cursor: pointer;"
-        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-006</span>
-      </div>
-      <div v-if="selected ===6" class="mt-1">
-        <b-list-group>
-          <b-list-group-item>Mount/Unmount</b-list-group-item>
-          <b-list-group-item>Restart</b-list-group-item>
-          <b-list-group-item>Reboot</b-list-group-item>
-          <b-list-group-item>Shut down</b-list-group-item>
-          <b-list-group-item>Config</b-list-group-item>
-        </b-list-group>
+      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
+        <span>A1-054</span>
       </div>
     </div>
     <div class="d-flex">
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-007</span>
+        <span>A1-055</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-008</span>
+        <span>A1-056</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-009</span>
+        <span>A1-057</span>
+      </div>
+      <div class="text-center bg-warning colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-058</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-010</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-011</span>
+        <span>A1-059</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-012</span>
+        <span>A1-060</span>
       </div>
     </div>
     <div class="d-flex">
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-013</span>
+        <span>A1-061</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-014</span>
+        <span>A1-062</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-015</span>
+        <span>A1-063</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-016</span>
+        <span>A1-064</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-017</span>
+      <div class="text-center bg-danger colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-065</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-018</span>
+        <span>A1-066</span>
       </div>
     </div>
     <div class="d-flex">
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-019</span>
+        <span>A1-067</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-020</span>
+        <span>A1-068</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-021</span>
+        <span>A1-069</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-022</span>
+        <span>A1-070</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-023</span>
+        <span>A1-071</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-024</span>
+        <span>A1-072</span>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div class="text-center bg-warning colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-073</span>
+      </div>
+      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-074</span>
+      </div>
+      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-075</span>
+      </div>
+      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-076</span>
+      </div>
+      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-077</span>
+      </div>
+      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
+        <span>A1-078</span>
       </div>
     </div>
     <div class="d-flex">
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-025</span>
+        <span>A1-079</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-026</span>
+        <span>A1-080</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-027</span>
+        <span>A1-081</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-028</span>
+        <span>A1-082</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-029</span>
+        <span>A1-083</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-030</span>
+      <div class="text-center bg-secondary colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
+        <span>A1-084</span>
       </div>
     </div>
     <div class="d-flex">
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-031</span>
+        <span>A1-085</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-032</span>
+        <span>A1-086</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-033</span>
+        <span>A1-087</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-034</span>
+        <span>A1-088</span>
       </div>
       <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-035</span>
+        <span>A1-089</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-036</span>
+      <div class="text-center bg-secondary colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
+        <feather-icon
+          icon="PlusIcon"
+          size="24"
+        />
       </div>
     </div>
     <div class="d-flex">
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-037</span>
+      <div class="text-center bg-secondary colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <feather-icon
+          icon="PlusIcon"
+          size="24"
+        />
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-038</span>
+      <div class="text-center bg-secondary colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <feather-icon
+          icon="PlusIcon"
+          size="24"
+        />
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-039</span>
+      <div class="text-center bg-secondary colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <feather-icon
+          icon="PlusIcon"
+          size="24"
+        />
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-040</span>
+      <div class="text-center bg-secondary colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <feather-icon
+          icon="PlusIcon"
+          size="24"
+        />
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-041</span>
+      <div class="text-center bg-secondary colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <feather-icon
+          icon="PlusIcon"
+          size="24"
+        />
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-042</span>
-      </div>
-    </div>
-    <div class="d-flex">
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-043</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-044</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-045</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-046</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-047</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-048</span>
+      <div class="text-center bg-secondary colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
+        <feather-icon
+          icon="PlusIcon"
+          size="24"
+        />
       </div>
     </div>
     <!-- button -->
@@ -250,58 +198,22 @@
 </template>
 
 <script>
-import BCardActions from '@core/components/b-card-actions/BCardActions.vue'
 import {
-  BCard, BBadge, BCardTitle, BCardText, BAvatar, BButton, BCollapse, VBToggle, BListGroup, BListGroupItem,
+  BCard, BBadge, BCardTitle, BCardText, BAvatar, BButton,
 } from 'bootstrap-vue'
 import Ripple from 'vue-ripple-directive'
 
 export default {
   components: {
-    BCardActions,
     BCard,
     BBadge,
     BButton,
     BAvatar,
     BCardTitle,
     BCardText,
-    BCollapse,
-    BListGroup,
-    BListGroupItem,
   },
   directives: {
-    'b-toggle': VBToggle,
     Ripple,
-  },
-  data() {
-    return {
-      selected: 0,
-      fields: [
-        'ACTION',
-        { key: 'ICON', label: 'ICON' },
-        'DETAILS',
-      ],
-      items: [
-        { ACTION: 'Collapse', ICON: 'ChevronDownIcon', DETAILS: 'Collapse card content using collapse action.' },
-        { ACTION: 'Refresh Content', ICON: 'RotateCwIcon', DETAILS: 'Refresh your card content using refresh action.' },
-      ],
-    }
-  },
-  methods: {
-    // stop refreshing card in 3 sec
-    refreshStop(cardName) {
-      setTimeout(() => {
-        this.$refs[cardName].showLoading = false
-      }, 3000)
-    },
-    selectRack(num) {
-      console.log('n', num)
-      if (this.selected === num) {
-        this.selected = 0
-      } else {
-        this.selected = num
-      }
-    },
   },
 }
 </script>
