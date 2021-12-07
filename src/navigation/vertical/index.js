@@ -11,7 +11,7 @@ export default [
   },
   {
     title: 'Rack',
-    route: 'rack-list',
+    route: 'rack',
     icon: 'ServerIcon',
   },
   {

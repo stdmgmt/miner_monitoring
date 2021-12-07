@@ -49,7 +49,7 @@
                   <span class="invoice-number">#{{ invoiceData.id }}</span>
                 </h4>
                 <div class="invoice-date-wrapper">
-                  <p class="invoice-date-title">Admin:</p>
+                  <p class="invoice-date-title">Hash:</p>
                   <p class="invoice-date">
                     {{ invoiceData.issuedDate }}
                   </p>
@@ -62,6 +62,15 @@
                 </div>
               </div>
             </div>
+          </b-card-body>
+
+          <!-- Spacer -->
+          <hr class="invoice-spacing" />
+
+          <!-- Note -->
+          <b-card-body class="invoice-padding pt-0">
+            <echart-line />
+            <ecommerce-revenue-report :data="data.revenue" />
           </b-card-body>
 
           <!-- Spacer -->
@@ -188,13 +197,13 @@
                   <hr class="my-50" />
                   <div class="invoice-total-item">
                     <p class="invoice-total-title">Total:</p>
-                    <p class="invoice-total-amount">1690</p>
+                    <p class="invoice-total-amount">$1690</p>
                   </div>
                 </div>
               </b-col>
             </b-row>
           </b-card-body>
-
+          
           <!-- Spacer -->
           <hr class="invoice-spacing" />
 
@@ -284,6 +293,8 @@ import Ripple from "vue-ripple-directive";
 import invoiceStoreModule from "../invoiceStoreModule";
 import InvoiceSidebarSendInvoice from "../InvoiceSidebarSendInvoice.vue";
 import InvoiceSidebarAddPayment from "../InvoiceSidebarAddPayment.vue";
+import EcommerceRevenueReport from './EcommerceRevenueReport.vue'
+import EchartLine from './EchartLine.vue'
 
 export default {
   directives: {
@@ -300,10 +311,11 @@ export default {
     BButton,
     BAlert,
     BLink,
-
     Logo,
     InvoiceSidebarAddPayment,
     InvoiceSidebarSendInvoice,
+    EcommerceRevenueReport,
+    EchartLine,
   },
   setup() {
     const invoiceData = ref(null);
@@ -357,6 +369,18 @@ export default {
       invoiceDescription,
       printInvoice,
     };
+  },
+  data() {
+    return {
+      data: {},
+    }
+  },
+  created() {
+    // data
+    this.$http.get('/ecommerce/data')
+      .then(response => {
+        this.data = response.data
+      })
   },
 };
 </script>

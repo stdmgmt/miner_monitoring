@@ -105,8 +105,8 @@ export default {
         { key: 'category', label: 'CATEGORY' },
         { key: 'active', label: 'Active' },
         { key: 'low_hash', label: 'LOW HASH' },
-        { key: 'hash_rate', label: 'HASH RATE' },
-        { key: 'consumption', label: 'CONSUMPTION' },
+        { key: 'hash_rate', label: 'WATT' },
+        { key: 'consumption', label: 'HASH RATE' },
       ],
     }
   },

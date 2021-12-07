@@ -35,7 +35,7 @@
                   v-ripple.400="'rgba(255, 255, 255, 0.15)'"
                   variant="primary"
                   style="margin-botton: 15px;"
-                  v-b-modal.modal-rack
+                  v-b-modal.modal-racks
                 >
                   Add Rack
                 </b-button>
@@ -68,7 +68,7 @@
 
     <!-- modal login-->
     <b-modal
-      id="modal-rack"
+      id="modal-racks"
       cancel-variant="outline-secondary"
       ok-title="Add"
       cancel-title="Cancel"
@@ -85,31 +85,24 @@
           />
         </b-form-group>
         <b-form-group>
-          <label for="password">Hash</label>
+          <label for="password">Location</label>
           <b-form-input
             type="text"
-            placeholder="min, max"
+            placeholder="1st floor"
           />
         </b-form-group>
         <b-form-group>
-          <label for="password">Frequency</label>
+          <label for="password">height</label>
           <b-form-input
             type="text"
-            placeholder="min, max"
+            placeholder="3"
           />
         </b-form-group>
         <b-form-group>
-          <label for="password">Watt</label>
+          <label for="password">weight</label>
           <b-form-input
             type="text"
-            placeholder="min, max"
-          />
-        </b-form-group>
-        <b-form-group>
-          <label for="password">Status</label>
-          <b-form-input
-            type="text"
-            placeholder="A or B or C"
+            placeholder="5x"
           />
         </b-form-group>
       </b-form>
