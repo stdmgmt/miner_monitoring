@@ -121,7 +121,7 @@
         class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
         <span>A1-008</span>
       </div>
-      <div v-if="selected ===9" class="mt-1">
+      <div v-if="selected ===8" class="mt-1">
         <b-list-group>
           <b-list-group-item v-b-modal.modal-worker>Mount/Unmount</b-list-group-item>
           <b-list-group-item>Restart</b-list-group-item>
