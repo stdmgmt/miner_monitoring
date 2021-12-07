@@ -5,13 +5,13 @@
     </b-badge>
     <div class="design-group d-flex"></div>
     <!--/ design group -->
-    <div class="d-flex">
+        <div class="d-flex">
       <div
         @click.prevent="selectRack(1)"
         style="cursor: pointer;"
         class="dropbown text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow"
       >
-        <span>A1-002</span>
+        <span>A1-001</span>
       </div>
       <div v-if="selected ===1" class="mt-1">
         <b-list-group>
@@ -99,145 +99,475 @@
       </div>
     </div>
     <div class="d-flex">
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+      <div
+        @click.prevent="selectRack(7)"
+        style="cursor: pointer;"
+        class="dropbown text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow"
+      >
         <span>A1-007</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-008</span>
+      <div v-if="selected ===7" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+      <div
+        @click.prevent="selectRack(8)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
         <span>A1-009</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-010</span>
+      <div v-if="selected ===9" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-011</span>
+      <div
+        @click.prevent="selectRack(9)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-009</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-012</span>
+      <div v-if="selected ===9" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(10)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-0010</span>
+      </div>
+      <div v-if="selected ===10" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(11)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-0011</span>
+      </div>
+      <div v-if="selected ===11" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(12)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-0012</span>
+      </div>
+      <div v-if="selected ===12" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
     </div>
     <div class="d-flex">
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+      <div
+        @click.prevent="selectRack(13)"
+        style="cursor: pointer;"
+        class="dropbown text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow"
+      >
         <span>A1-013</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+      <div v-if="selected ===13" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(14)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
         <span>A1-014</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-015</span>
+      <div v-if="selected ===14" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-016</span>
+      <div
+        @click.prevent="selectRack(15)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-0015</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-017</span>
+      <div v-if="selected ===15" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-018</span>
+      <div
+        @click.prevent="selectRack(16)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-0016</span>
+      </div>
+      <div v-if="selected ===16" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(17)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-0017</span>
+      </div>
+      <div v-if="selected ===17" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(18)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-0018</span>
+      </div>
+      <div v-if="selected ===18" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
     </div>
     <div class="d-flex">
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+      <div
+        @click.prevent="selectRack(19)"
+        style="cursor: pointer;"
+        class="dropbown text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow"
+      >
         <span>A1-019</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-020</span>
+      <div v-if="selected ===19" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-021</span>
+      <div
+        @click.prevent="selectRack(2)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-002</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-022</span>
+      <div v-if="selected ===2" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-023</span>
+      <div
+        @click.prevent="selectRack(3)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-003</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-024</span>
+      <div v-if="selected ===3" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(4)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-004</span>
+      </div>
+      <div v-if="selected ===4" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(5)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-005</span>
+      </div>
+      <div v-if="selected ===5" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(6)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-006</span>
+      </div>
+      <div v-if="selected ===6" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
     </div>
     <div class="d-flex">
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-025</span>
+      <div
+        @click.prevent="selectRack(1)"
+        style="cursor: pointer;"
+        class="dropbown text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow"
+      >
+        <span>A1-001</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-026</span>
+      <div v-if="selected ===1" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-027</span>
+      <div
+        @click.prevent="selectRack(2)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-002</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-028</span>
+      <div v-if="selected ===2" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-029</span>
+      <div
+        @click.prevent="selectRack(3)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-003</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-030</span>
+      <div v-if="selected ===3" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(4)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-004</span>
+      </div>
+      <div v-if="selected ===4" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(5)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-005</span>
+      </div>
+      <div v-if="selected ===5" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(6)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-006</span>
+      </div>
+      <div v-if="selected ===6" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
     </div>
-    <div class="d-flex">
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-031</span>
+        <div class="d-flex">
+      <div
+        @click.prevent="selectRack(1)"
+        style="cursor: pointer;"
+        class="dropbown text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow"
+      >
+        <span>A1-001</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-032</span>
+      <div v-if="selected ===1" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-033</span>
+      <div
+        @click.prevent="selectRack(2)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-002</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-034</span>
+      <div v-if="selected ===2" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-035</span>
+      <div
+        @click.prevent="selectRack(3)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-003</span>
       </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-036</span>
+      <div v-if="selected ===3" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(4)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-004</span>
+      </div>
+      <div v-if="selected ===4" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(5)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-005</span>
+      </div>
+      <div v-if="selected ===5" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
+      </div>
+      <div
+        @click.prevent="selectRack(6)"
+        style="cursor: pointer;"
+        class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
+        <span>A1-006</span>
+      </div>
+      <div v-if="selected ===6" class="mt-1">
+        <b-list-group>
+          <b-list-group-item>Mount/Unmount</b-list-group-item>
+          <b-list-group-item>Restart</b-list-group-item>
+          <b-list-group-item>Reboot</b-list-group-item>
+          <b-list-group-item>Shut down</b-list-group-item>
+          <b-list-group-item>Config</b-list-group-item>
+        </b-list-group>
       </div>
     </div>
-    <div class="d-flex">
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-037</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-038</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-039</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-040</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-041</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-042</span>
-      </div>
-    </div>
-    <div class="d-flex">
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-043</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-044</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-045</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-046</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center mr-1 ml-50 my-1 shadow">
-        <span>A1-047</span>
-      </div>
-      <div class="text-center bg-success colors-container rounded text-white width-100 height-100 d-flex align-items-center justify-content-center my-1 ml-50 shadow">
-        <span>A1-048</span>
-      </div>
-    </div>
+
+
+
+
+
     <!-- button -->
     <!-- <b-button
       v-ripple.400="'rgba(255, 255, 255, 0.15)'"
@@ -252,7 +582,8 @@
 <script>
 import BCardActions from '@core/components/b-card-actions/BCardActions.vue'
 import {
-  BCard, BBadge, BCardTitle, BCardText, BAvatar, BButton, BCollapse, VBToggle, BListGroup, BListGroupItem,
+  BCard, BBadge, BCardTitle, BCardText, BAvatar, BButton, BCollapse, VBToggle, BListGroup, BListGroupItem, BDropdown,
+  BDropdownItem,
 } from 'bootstrap-vue'
 import Ripple from 'vue-ripple-directive'
 
@@ -268,6 +599,8 @@ export default {
     BCollapse,
     BListGroup,
     BListGroupItem,
+    BDropdown,
+    BDropdownItem,
   },
   directives: {
     'b-toggle': VBToggle,
